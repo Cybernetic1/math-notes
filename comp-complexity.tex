@@ -1,0 +1,25 @@
+\input{../YKY-preamble}
+
+\title{Computational complexity}
+\author{甄景贤 Yan King Yin {\footnotesize general.intelligence@gmail.com}}
+
+\begin{document}
+	
+\maketitle
+
+We know that at least one of the inclusions below is proper:
+\begin{equation}
+\mathsf{L} \stackrel{?}{\subset} \mathsf{P} \stackrel{?}{\subset} \mathsf{NP} \stackrel{?}{\subset} \mathsf{PSPACE}
+\end{equation}
+but we don't have a proof for any of them \parencite{Moore2011}. %The Nature of computation
+
+A more detailed relationship between complexity classes:
+\begin{equation}
+\begin{tikzcd}[swap]
+& & & \mathsf{NP} \arrow{r}[swap]{?} \arrow{ddr}{\neq} & \mathsf{PSPACE} \arrow{dr}[swap]{\neq} \\
+\mathsf{L} \arrow{r}[swap]{?} & \mathsf{NL} \arrow{r}[swap]{?} & \mathsf{P} \arrow{ur}[swap]{?} \arrow{dr}{\neq} & & & \mathsf{EXPSPACE} \\
+& & & \mathsf{EXP} \arrow{r}{?} & \mathsf{NEXP} \arrow{ur}{?} 
+\end{tikzcd}
+\end{equation}
+
+\end{document}
